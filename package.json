@@ -1,0 +1,36 @@
+{
+  "name": "web2-frontend-joachimhamraoui",
+  "version": "1.0.0",
+  "description": "Course Project Animal Crossing Your Horizons for Web II 2021-2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EHB-MCT/web2-frontend-JoachimHamraoui.git"
+  },
+  "keywords": [
+    "joachim",
+    "hamraoui",
+    "animal",
+    "crossing",
+    "course",
+    "project",
+    "web",
+    "ii"
+  ],
+  "author": "Joachim Hamraoui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EHB-MCT/web2-frontend-JoachimHamraoui/issues"
+  },
+  "homepage": "https://github.com/EHB-MCT/web2-frontend-JoachimHamraoui#readme",
+  "devDependencies": {
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
