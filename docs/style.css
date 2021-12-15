@@ -213,15 +213,23 @@ section.search-engine h1 {
     margin-right: 24px;
 }
 
-section.search-engine form {
-    flex: 4 4 0
+section.search-engine select {
+    flex: 4 4 0;
+    padding: 12px 24px;
+    background-color: #493C22;
+    /* border-radius: 75px; */
+    color: #efefef;
+    font-family: 'Arvo';
+    font-size: 24px;
+    border: none;
+    outline-width: 0px
 }
 
-section.search-engine form input {
+section.search-engine select option {
     width: 100%;
     padding: 12px 24px;
     background-color: #493C22;
-    border-radius: 75px;
+    /* border-radius: 75px; */
     color: #efefef;
     font-family: 'Arvo';
     font-size: 24px;
