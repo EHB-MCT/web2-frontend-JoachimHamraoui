@@ -201,6 +201,22 @@ section.search-engine {
     margin-bottom: 36px;
 }
 
+.search-engine form {
+    flex: 4 4 0;
+}
+
+.search-engine form input {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #493C22;
+    border-radius: 75px;
+    color: #efefef;
+    font-family: 'Arvo';
+    font-size: 24px;
+    border: none;
+    outline-width: 0px;
+}
+
 section.search-engine h1 {
     font-family: 'Arvo';
     flex: 1 1 0;
@@ -389,11 +405,12 @@ nav {
 }
 
 #selected-cred div h3 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.2;
 }
 
 #selected-cred div p {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 #selected-pic img {
@@ -467,4 +484,11 @@ nav {
 
 .background-nav ul .dropdown-link .dropdown-menu {
     background-color: #EFEFB9;
+}
+
+.fish-photo {
+    width: 150% !important;
+    transform: rotate(90deg);
+    margin-left: -60px !important;
+    margin-top: 70px !important;
 }

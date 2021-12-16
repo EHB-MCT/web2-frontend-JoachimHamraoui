@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Crossings — Your Horizons</title>
-    <script src="../villager.js"></script>
+    <script src="../seacreatures.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +21,7 @@
 </head>
 
 <body>
-    <nav class="background-nav">
+    <nav>
         <h1>AC:YH</h1>
         <ul>
             <li><a href="index.html">home</a></li>
@@ -37,44 +38,27 @@
             </li>
         </ul>
     </nav>
-    <section id="selected">
-        <div id="arrow-back">
-
-        </div>
-        <section id="selected-ui2">
-            <div id="selected-pic">
-                <img src="https://acnhapi.com/v1/images/villagers/101" alt="a picture of fauna">
-            </div>
-            <div id="selected-info">
-                <div id="selected-name">
-                    <p>Name</p>
-                    <h1>Fauna</h1>
-                </div>
-                <div id="selected-cred">
-                    <div>
-                        <p>Birthday</p>
-                        <h2>23 March</h2>
-                    </div>
-                    <div>
-                        <p>Birthday</p>
-                        <h2>23 March</h2>
-                    </div>
-                    <div>
-                        <p>Birthday</p>
-                        <h2>23 March</h2>
-                    </div>
-                    <div>
-                        <p>Birthday</p>
-                        <h2>23 March</h2>
-                    </div>
-                    <div>
-                        <p>Birthday</p>
-                        <h2>23 March</h2>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <h1>Animal Crossing — </br> Your Horizons
+        </h1>
+    </header>
+    <main>
+        <section class="search-engine">
+            <h1>Villagers</h1>
+            <form>
+                <input type="text" name="search" id="search">
+            </form>
         </section>
-    </section>
+        <section class="search-results" id="search-results">
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>App made by © Joachim Hamraoui using LOVE and<br>
+                Animal Crossing New Horizons API by http://acnhapi.com/</p>
+        </div>
+    </footer>
 </body>
 
 </html>
