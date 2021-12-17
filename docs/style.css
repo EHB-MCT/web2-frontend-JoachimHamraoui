@@ -492,3 +492,9 @@ nav {
     margin-left: -60px !important;
     margin-top: 70px !important;
 }
+
+.art-img {
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-top: 50px;
+}

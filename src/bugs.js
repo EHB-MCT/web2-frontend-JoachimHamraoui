@@ -76,11 +76,11 @@ window.onload = function () {
                     </div>
                     <div>
                         <p>Price</p>
-                        <h2>${data.price}</h2>
+                        <h2>${data.price} Bells</h2>
                     </div>
                     <div>
                         <p>Flick Price</p>
-                        <h2>${data["price-flick"]}</h2>
+                        <h2>${data["price-flick"]} Bells</h2>
                     </div>
                     <div id="description">
                         <p>Catchphrase</p>

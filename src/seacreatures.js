@@ -58,7 +58,7 @@ window.onload = function () {
         </div>
         <section id="selected-ui2">
             <div id="selected-pic">
-                <img src="https://acnhapi.com/v1/images/bugs/${selectedId}" alt="a picture of fauna">
+                <img src="https://acnhapi.com/v1/images/sea/${selectedId}" alt="a picture of fauna">
             </div>
             <div id="selected-info">
                 <div id="selected-name">
@@ -80,7 +80,7 @@ window.onload = function () {
                     </div>
                     <div>
                         <p>Price</p>
-                        <h2>${data.price}</h2>
+                        <h2>${data.price} Bells</h2>
                     </div>
                     <div id="description">
                         <p>Catchphrase</p>
