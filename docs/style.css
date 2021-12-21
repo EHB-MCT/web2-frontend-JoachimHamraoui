@@ -498,3 +498,15 @@ nav {
     margin-left: 0px !important;
     margin-top: 50px;
 }
+
+#deleteBtn {
+    padding: 6px;
+    border: none;
+    border-radius: 50px;
+    background-color: #da413c;
+    /* position: absolute; */
+    color: #efefef;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    left: 800;
+}

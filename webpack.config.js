@@ -5,12 +5,12 @@ const path = require('path');
 module.exports = {
   mode: "development",
   entry: {
-    masonry: './src/masonry.js',
     villager: './src/villager.js',
     bugs: './src/bugs.js',
     fish: './src/fish.js',
     art: './src/art.js',
-    seacreatures: './src/seacreatures.js'
+    seacreatures: './src/seacreatures.js',
+    userprofile: './src/userprofile.js'
   },
   output: {
     filename: '[name].js',

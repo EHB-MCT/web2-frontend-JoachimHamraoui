@@ -17,7 +17,7 @@ window.onload = function () {
             let select = document.getElementById('villager-species');
 
             for (let element in data) {
- 
+
 
                 // https://ricardometring.com/getting-the-value-of-a-select-in-javascript
                 let speciesValue = select.options[select.selectedIndex].value;
@@ -87,11 +87,47 @@ window.onload = function () {
                         <p>Personality</p>
                         <h2>${data.personality}</h2>
                     </div>
+                    <div>
+                        <a><button id="addItem">Add Villager</button></a>
+                    </div>
                 </div>
             </div>
         </section>`
 
         villagerHtml.innerHTML = villagerData;
+
+        const addItemBtn = document.getElementById('addItem');
+
+        addItemBtn.addEventListener('click', e => {
+            e.preventDefault()
+            let itemId = data.id;
+            let itemFilename = data["file-name"];
+            let itemName = data.name["name-EUen"];
+            let itemIcon = data["icon_uri"];
+
+            console.log(itemId);
+            console.log(itemFilename);
+            console.log(itemName);
+            console.log(itemIcon);
+
+            fetch('https://web2-backend-joachimhamraoui.herokuapp.com/villager', {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    id: itemId,
+                    filename: itemFilename,
+                    name: itemName,
+                    icon: itemIcon
+                })
+            }).then(response => {
+                return response.json()
+            }).then(data => {
+                console.log('Succes: ', data);
+            })
+
+        })
 
     }
 
