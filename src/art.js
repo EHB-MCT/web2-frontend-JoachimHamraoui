@@ -13,7 +13,7 @@ window.onload = function () {
     //   
     async function searchEngine() {
 
-        const response = await fetch(`http://acnhapi.com/v1/art`);
+        const response = await fetch(`https://acnhapi.com/v1/art`);
         const data = await response.json();
         // console.log(data.birthday);
 
@@ -35,7 +35,7 @@ window.onload = function () {
 
     async function displaySearched() {
 
-        const response = await fetch(`http://acnhapi.com/v1/art/${selectedId}`);
+        const response = await fetch(`https://acnhapi.com/v1/art/${selectedId}`);
         const data = await response.json();
         console.log(data.birthday);
 

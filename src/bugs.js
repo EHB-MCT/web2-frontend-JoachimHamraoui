@@ -13,7 +13,7 @@ window.onload = function () {
     let searchBar = document.getElementById('search');
     async function searchEngine() {
 
-        const response = await fetch(`http://acnhapi.com/v1/bugs`);
+        const response = await fetch(`https://acnhapi.com/v1/bugs`);
         const data = await response.json();
         // console.log(data.birthday);
 
@@ -54,7 +54,7 @@ window.onload = function () {
 
     async function displaySearched() {
 
-        const response = await fetch(`http://acnhapi.com/v1/bugs/${selectedId}`);
+        const response = await fetch(`https://acnhapi.com/v1/bugs/${selectedId}`);
         const data = await response.json();
         console.log(data.birthday);
 
