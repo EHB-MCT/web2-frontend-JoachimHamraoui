@@ -54,7 +54,7 @@ window.onload = function () {
         let infoHtml = document.getElementById('selected');
 
         let infoData = `<div id="arrow-back">
-
+        <a href="./pages/seacreatures.html">K</a>
         </div>
         <section id="selected-ui2">
             <div id="selected-pic">
@@ -86,11 +86,47 @@ window.onload = function () {
                         <p>Catchphrase</p>
                         <h3>${data["catch-phrase"]}</h3>
                     </div>
+                    <div>
+                        <a><button id="addItem">Add Fish</button></a>
+                    </div>
                 </div>
             </div>
         </section>`
 
         infoHtml.innerHTML = infoData;
+
+        const addItemBtn = document.getElementById('addItem');
+
+        // addItemBtn.addEventListener('click', e => {
+        //     e.preventDefault()
+        //     let itemId = data.id;
+        //     let itemFilename = data["file-name"];
+        //     let itemName = data.name["name-EUen"];
+        //     let itemIcon = data["icon_uri"];
+
+        //     console.log(itemId);
+        //     console.log(itemFilename);
+        //     console.log(itemName);
+        //     console.log(itemIcon);
+
+        //     fetch('https://web2-backend-joachimhamraoui.herokuapp.com/seacreature', {
+        //         method: "POST",
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //         },
+        //         body: JSON.stringify({
+        //             id: itemId,
+        //             filename: itemFilename,
+        //             name: itemName,
+        //             icon: itemIcon
+        //         })
+        //     }).then(response => {
+        //         return response.json()
+        //     }).then(data => {
+        //         console.log('Succes: ', data);
+        //     })
+
+        // })
 
     }
 

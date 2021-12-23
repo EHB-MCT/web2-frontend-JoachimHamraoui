@@ -76,7 +76,37 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
+#profile li a {
+    color: #fefefe !important;
+}
+
+nav ul#profile {
+    flex: 1 1 0;
+    justify-content: flex-end !important;
+}
+
+nav ul#profile li a {
+    padding: 6px 32px;
+    border: 2px solid #efefef;
+    border-radius: 25px;
+}
+
+nav.background-nav ul#profile {
+    flex: 1 1 0;
+    justify-content: flex-end !important;
+    transition: .2s ease-in-out;
+}
+
+nav.background-nav ul#profile li a {
+    padding: 6px 32px;
+    border: 2px solid #493C22;
+    border-radius: 25px;
+    color: #493C22 !important;
+    transition: .2s ease-in-out;
+
+}
+
+main { 
     width: 60%;
     margin: auto;
     margin-top: 160px;
@@ -315,10 +345,14 @@ nav {
     color: #493C22;
     /* padding: 12px; */
     z-index: 1000;
+    transition: .2s ease-in-out;
+
 }
 
 .background-nav li a {
-    color: #493C22
+    color: #493C22;
+    transition: .2s ease-in-out;
+
 }
 
 #selected {
@@ -352,6 +386,16 @@ nav {
     border-radius: 50%;
     background-color: #493C22;
     margin-bottom: -24px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#arrow-back a {
+    color:#efefef;
+    font-family: 'Montserrat';
+    font-weight: 800;
 }
 
 #selected-pic {
@@ -484,6 +528,8 @@ nav {
 
 .background-nav ul .dropdown-link .dropdown-menu {
     background-color: #EFEFB9;
+    transition: .2s ease-in-out;
+
 }
 
 .fish-photo {

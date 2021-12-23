@@ -1,5 +1,12 @@
 window.onload = function () {
 
+    let navigationScroll = document.querySelector('nav');
+
+    window.addEventListener('scroll', () => {
+        console.log('Scrolled!')
+        navigationScroll.setAttribute('class', 'background-nav')
+    })
+
     let selectedId = document.location.search.replace(/^.*?\=/, '');
 
     let searchItemHtml = document.getElementById('search-results');
@@ -35,7 +42,7 @@ window.onload = function () {
         let infoHtml = document.getElementById('selected');
 
         let infoData = `<div id="arrow-back">
-
+        <a href="./art.html">❮</a>
         </div>
         <section id="selected-ui2">
             <div id="selected-pic">
@@ -59,11 +66,47 @@ window.onload = function () {
                         <p>Catchphrase</p>
                         <h3>${data["museum-desc"]}</h3>
                     </div>
+                    <div>
+                        <a><button id="addItem">Add Art</button></a>
+                    </div>
                 </div>
             </div>
         </section>`
 
         infoHtml.innerHTML = infoData;
+
+        const addItemBtn = document.getElementById('addItem');
+
+        addItemBtn.addEventListener('click', e => {
+            e.preventDefault()
+            let itemId = data.id;
+            let itemFilename = data["file-name"];
+            let itemName = data.name["name-EUen"];
+            let itemImg = data["image_uri"];
+
+            console.log(itemId);
+            console.log(itemFilename);
+            console.log(itemName);
+            console.log(itemImg);
+
+            fetch('https://web2-backend-joachimhamraoui.herokuapp.com/art', {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    id: itemId,
+                    filename: itemFilename,
+                    name: itemName,
+                    image: itemImg
+                })
+            }).then(response => {
+                return response.json()
+            }).then(data => {
+                console.log('Succes: ', data);
+            })
+
+        })
 
     }
 

@@ -1,5 +1,12 @@
 window.onload = function () {
 
+    let navigationScroll = document.querySelector('nav');
+
+    window.addEventListener('scroll', () => {
+        console.log('Scrolled!')
+        navigationScroll.setAttribute('class', 'background-nav')
+    })
+
     let selectedId = document.location.search.replace(/^.*?\=/, '');
 
     async function searchVillagerEngine() {
@@ -55,7 +62,7 @@ window.onload = function () {
         let villagerHtml = document.getElementById('selected');
 
         let villagerData = `<div id="arrow-back">
-
+        <a href="./villagers.html">❮</a>
         </div>
         <section id="selected-ui2">
             <div id="selected-pic">
