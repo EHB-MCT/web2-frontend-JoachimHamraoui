@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/EHB-MCT/web2-frontend-JoachimHamraoui/issues"
   },
-  "homepage": "https://github.com/EHB-MCT/web2-frontend-JoachimHamraoui#readme",
+  "homepage": "https://ehb-mct.github.io/web2-frontend-JoachimHamraoui/",
   "devDependencies": {
     "webpack": "^5.64.1",
     "webpack-cli": "^4.9.1"
