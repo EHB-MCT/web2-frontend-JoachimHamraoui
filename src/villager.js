@@ -1,11 +1,11 @@
 window.onload = function () {
 
-    // let navigationScroll = document.querySelector('nav');
+    let navigationScroll = document.querySelector('nav');
 
-    // window.addEventListener('scroll', () => {
-    //     console.log('Scrolled!')
-    //     navigationScroll.setAttribute('class', 'background-nav')
-    // })
+    window.addEventListener('scroll', () => {
+        console.log('Scrolled!')
+        navigationScroll.setAttribute('class', 'background-nav')
+    })
 
     let selectedId = document.location.search.replace(/^.*?\=/, '');
 
@@ -13,7 +13,7 @@ window.onload = function () {
         let searchItemHtml = document.getElementById('search-results');
         let listSpecies = document.getElementById('search-villager');
 
-        const response = await fetch(`http://acnhapi.com/v1/villagers`);
+        const response = await fetch(`https://acnhapi.com/v1/villagers`);
         const data = await response.json();
         // const readableData = data.data;
         // console.log(data.birthday);
@@ -55,7 +55,7 @@ window.onload = function () {
 
     async function displayVillager() {
 
-        const response = await fetch(`http://acnhapi.com/v1/villagers/${selectedId}`);
+        const response = await fetch(`https://acnhapi.com/v1/villagers/${selectedId}`);
         const data = await response.json();
         console.log(data.birthday);
 
