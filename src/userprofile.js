@@ -146,7 +146,7 @@ window.onload = function () {
             let bug = data[element];
 
             let htmlString = `
-            <a href="fish-info.html?item-id=${bug.id}" class="search-item">
+            <a href="bugs-info.html?item-id=${bug.id}" class="search-item">
             <div>
             <button id="deleteBtn" class="deleteBtn" value="${bug["_id"]}">X</button>
                 <img src="${bug.icon}" alt="villager-image">
@@ -248,7 +248,7 @@ window.onload = function () {
             let art = data[element];
 
             let htmlString = `
-            <a href="fish-info.html?item-id=${art.id}" class="search-item">
+            <a href="art-info.html?item-id=${art.id}" class="search-item">
             <div>
             <button id="deleteBtn" class="deleteBtn" value="${art["_id"]}">X</button>
                 <img src="${art.image}" alt="villager-image">
